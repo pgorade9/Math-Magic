@@ -135,6 +135,10 @@ function checktablesRightAnswer(table_of,len_array){
 		document.getElementById("correct").play();
 		document.getElementById("correct_rimg").style.visibility='visible';
 		
+	}
+	else if(all_correct_flag == 0){
+		document.getElementById("wrong").play();
+		document.getElementById("wrong_rimg").style.visibility='visible';
 	}		
 	setTimeout(function(){
 		
