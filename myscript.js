@@ -15,8 +15,9 @@ function checkAddRightAnswer(random1, random2, value){
 		updateScore(flag=1);
 	}
     else{
-        document.getElementById("wrong_img").style.visibility='visible';
 		document.getElementById("wrong").play();
+        document.getElementById("wrong_img").style.visibility='visible';
+		
 		
 		setTimeout(function(){
 			
@@ -53,8 +54,9 @@ function checkSubRightAnswer(random1, random2, value){
 		updateScore(flag=1);
 	}
     else{
-        document.getElementById("wrong_img").style.visibility='visible';
 		document.getElementById("wrong").play();
+        document.getElementById("wrong_img").style.visibility='visible';
+		
 		
 		setTimeout(function(){
 			
@@ -85,7 +87,8 @@ function askTableQuestions(){
 	console.log("table_array length = ",len_array);
 	document.getElementById("correct_img").style.visibility='hidden';
 	document.getElementById("wrong_img").style.visibility='hidden';
-	
+	document.getElementById("correct_rimg").style.visibility='hidden';
+	document.getElementById("wrong_rimg").style.visibility='hidden';
 	
 	console.log("I am called in askTableQuestions");  
 	playerName = document.getElementById("playerName").innerHTML;
@@ -129,8 +132,9 @@ function checktablesRightAnswer(table_of,len_array){
 			}
 				});
 	if(all_correct_flag == 1){
-		document.getElementById("correct_img").style.visibility='visible';
 		document.getElementById("correct").play();
+		document.getElementById("correct_rimg").style.visibility='visible';
+		
 	}		
 	setTimeout(function(){
 		
