@@ -520,6 +520,7 @@ function updateTableScore(correct_count,len_array){
 		document.getElementById("questionArea").innerHTML += "<h1>Score = " + totalCorrect*10/(totalQuestions) + " % " + " </h1>";
 		document.getElementById("score").innerHTML = "";
 		document.getElementById("optionArea").innerHTML = "";
+		document.getElementById("wrong_rimg").style.visibility='hidden';
 		
 		
 		document.getElementById("questionArea").innerHTML += "<input type='button' class='options' value=OK onclick=location.reload()>";
