@@ -380,7 +380,7 @@ function checkNumbers(randomQuestionId){
 		askNumberWordQuestions();
 		updateScore(flag=1);
 			
-	},2000);
+	},3000);
 	}
 	else{
         document.getElementById("wrong_img").style.visibility='visible';
