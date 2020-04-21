@@ -108,11 +108,13 @@ function askTableQuestions(){
 	tableQuestion +="</table>";
 	document.getElementById("questionArea").innerHTML = tableQuestion;
 	
-	document.getElementById("optionArea").innerHTML += "<input type='button' class='tables' value = 'submit' onclick= checktablesRightAnswer(" +table_of + "," + len_array +  ")>";	
+	document.getElementById("optionArea").innerHTML += "<input type='button' id = 'tables_submit' class='tables' value = 'submit' onclick= checktablesRightAnswer(" +table_of + "," + len_array +  ")>";	
 	document.getElementById("1").focus();
+	document.getElementById("tables_submit").disabled = false;
 }
 
 function checktablesRightAnswer(table_of,len_array){
+	document.getElementById("tables_submit").disabled = true;
 	answer_array = [];
 	for(i=0;i<10;i++){
 		answer_array.push(document.getElementById(i+1).value);
