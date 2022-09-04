@@ -78,7 +78,7 @@ function checkSubRightAnswer(random1, random2, value){
 
 /*newQuestion();*/
 
-var table_array = [6,7,8,9,10,11,12,13,14,15];
+var table_array = [11,12,13,14,15,16,17,18,19,20];
 table_array = shuffle(table_array);
 
 function askTableQuestions(){
